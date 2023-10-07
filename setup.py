@@ -10,7 +10,7 @@ ext_args = dict(
     )
 
 ext_modules = [
-    Extension(name="dummy._code", sources=["src/dummpy/_code.pyx"], **ext_args),
+    Extension(name="dummy._code", sources=["src/dummy/_code.pyx"], **ext_args),
     ]
 
 setup(ext_modules=cythonize(ext_modules))
