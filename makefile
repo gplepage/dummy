@@ -44,12 +44,12 @@ sdist:          # source distribution
 	$(PYTHON) -m build --sdist
 
 
-upload-twine: $(CYTHONFILES)
-	twine upload dist/dummy-$(VERSION).tar.gz
+# upload-twine: $(CYTHONFILES)
+# 	twine upload dist/dummy-$(VERSION).tar.gz
 
 upload-git: $(CYTHONFILES)
 	echo  "version $(VERSION)"
-	make doc-html
+	# make doc-html
 	git diff --exit-code
 	git diff --cached --exit-code
 	git push origin master
