@@ -1,3 +1,14 @@
-__version__ = '0.0'
+
+try:
+    import sys
+
+    if sys.version_info >= (3, 8):
+        from importlib import metadata
+    else:
+        import importlib_metadata as metadata
+    __version__ = metadata.version('dummy')
+except:
+    # less precise default if fail
+    __version__ = '>=0.0'
 
 from ._code import *
