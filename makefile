@@ -52,7 +52,7 @@ upload-git: $(CYTHONFILES)
 	# make doc-html
 	git diff --exit-code
 	git diff --cached --exit-code
-	git push origin master
+	git push origin main
 
 tag-git:
 	echo  "version $(VERSION)"
