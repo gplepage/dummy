@@ -1,3 +1,4 @@
 build
-src/egg*
+src/dummy.egg*
+src/dummy/*.c
 git-instructions
