@@ -2,3 +2,4 @@ build
 src/dummy.egg*
 src/dummy/*.c
 git-instructions
+dist
