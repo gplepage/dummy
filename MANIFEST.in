@@ -13,3 +13,4 @@ recursive-exclude tests/__pycache__ *
 recursive-exclude doc/source/_build *
 exclude src/*egg-info/
 exclude src/gvar/*.c
+exclude notes

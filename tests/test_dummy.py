@@ -6,8 +6,8 @@ import dummy as du
 
 class test_dummy(unittest.TestCase):
 
-    def test_double(self):
-        self.assertAlmostEqual(du.double(2), 4)
+    def test_notdouble(self):
+        self.assertAlmostEqual(du.notdouble(3.), 9.0)
 
     def test_triple(self):
         self.assertAlmostEqual(du.triple(2), 6)
