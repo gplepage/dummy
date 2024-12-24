@@ -22,7 +22,7 @@ import copy
 import math
 import pickle
 import numpy as np
-import gvar as gv
+# import gvar as gv
 from dummy._svec_smat import *
 
 FAST = False
